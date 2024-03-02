@@ -151,10 +151,10 @@ const Projects = () => {
                   alt={project.name}
                 />
                 <div className="flex flex-col p-1 md:p-4 gap-y-2">
-                  <h3 className="font-bold text-secondaryCol text-xs md:text-xl">
+                  <h3 className="font-bold text-lighterCol text-xs md:text-xl">
                     {project.name}
                   </h3>
-                  <p className="text-[5px] text-lighterCol md:text-[10px]">
+                  <p className="text-[5px] text-secondaryCol md:text-[10px]">
                     {project.description}
                   </p>
                   <div className="flex items-center gap-x-3">
