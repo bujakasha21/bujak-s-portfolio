@@ -37,9 +37,13 @@ const Links = () => {
     <div className="w-full h-fit">
       <div className="flex items-center justify-center md:justify-end gap-x-5 w-full">
         {IconVector.map((icon) => (
-          <div key={icon.id} className="">
+          <div key={icon.id}>
             <Link href={icon.link}>
-              <Image className="w-6 md:w-10" src={icon.icons} alt="icons" />
+              <Image
+                className="w-8 md:w-10 md:hover:w-14 transition-all ease-in"
+                src={icon.icons}
+                alt="icons"
+              />
             </Link>
           </div>
         ))}

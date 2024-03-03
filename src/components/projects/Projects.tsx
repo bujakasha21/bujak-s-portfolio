@@ -5,7 +5,7 @@ import { StaticImageData } from "next/image";
 import MightyWeb from "@/assets/projects/Migthy.png";
 import CrownWeb from "@/assets/projects/Crown.png";
 import SportsBlog from "@/assets/projects/sports-blog.png";
-import CoffeWeb from "@/assets/projects/coffe.png";
+import LogyyApp from "@/assets/projects/Logyy.jpg";
 import GitHub from "@/assets/icons/github.png";
 import Website from "@/assets/icons/world-wide-web.png";
 
@@ -43,7 +43,7 @@ const Project: Data[] = [
     id: 2,
     description:
       "Logyy is the website of the digital agency I co-founded with my partner, built using Next.js and TypeScript, along with Tailwind CSS. In addition to showcasing our services and portfolio, the website also features informative blog posts, client testimonials, and case studies highlighting our successful projects and collaborations.",
-    websiteImg: CoffeWeb,
+    websiteImg: LogyyApp,
     name: "Logyy",
     class: "perspective-right",
     github: GitHub,
@@ -130,7 +130,7 @@ const Projects = () => {
     <div id="projects" className="">
       <div ref={triggering} className="perspective bg-secondaryCol">
         <div className="absolute w-full">
-          <h1 className="font-bold text-center text-xl md:text-4xl text-darkerCol py-[8rem]">
+          <h1 className="font-bold text-center text-xl md:text-4xl text-darkerCol pt-[6.5rem] pb-[8rem]">
             {`<My Projects />`}
           </h1>
         </div>
@@ -143,26 +143,36 @@ const Projects = () => {
               <div
                 ref={ref}
                 key={project.id}
-                className={`${project.class} rounded-md bg-darkerCol`}
+                className={`${project.class} rounded-md bg-darkerCol shadow-md`}
               >
-                <Image
-                  className="w-full rounded-t-md"
-                  src={project.websiteImg}
-                  alt={project.name}
-                />
+                <Link href={project.websiteURL}>
+                  <Image
+                    className="w-full rounded-t-md"
+                    src={project.websiteImg}
+                    alt={project.name}
+                  />
+                </Link>
                 <div className="flex flex-col p-1 md:p-4 gap-y-2">
-                  <h3 className="font-bold text-lighterCol text-xs md:text-xl">
+                  <h3 className="font-bold text-lighterCol text-[10px] md:text-xl">
                     {project.name}
                   </h3>
-                  <p className="text-[5px] text-secondaryCol md:text-[10px]">
+                  <p className="text-[4px] text-secondaryCol md:text-[10px]">
                     {project.description}
                   </p>
                   <div className="flex items-center gap-x-3">
                     <Link href={project.githubRepo}>
-                      <Image src={project.github} alt="" className="w-6" />
+                      <Image
+                        src={project.github}
+                        alt=""
+                        className="w-4 md:w-6"
+                      />
                     </Link>
                     <Link href={project.websiteURL}>
-                      <Image src={project.website} alt="" className="w-6" />
+                      <Image
+                        src={project.website}
+                        alt=""
+                        className="w-4 md:w-6"
+                      />
                     </Link>
                   </div>
                 </div>

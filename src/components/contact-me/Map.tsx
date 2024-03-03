@@ -41,7 +41,7 @@ const Map = () => {
     };
     mapInit();
   }, []);
-  return <div className="md:h-[500px] h-[250px]" ref={mapRef} />;
+  return <div className="md:h-[450px] h-[250px]" ref={mapRef} />;
 };
 
 export default Map;

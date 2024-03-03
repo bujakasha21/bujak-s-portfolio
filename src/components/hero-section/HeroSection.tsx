@@ -1,10 +1,13 @@
 import Image from "next/image";
 import React, { Key } from "react";
 
+import Bujakasha from "@/assets/images/DAVOR-ss.png";
+
 import Typewriter from "typewriter-effect";
 
 import SlideToRight from "../effects/SlideToRight";
 import SlideToTop from "../effects/SlideToTop";
+import Link from "next/link";
 
 type Props = {
   id: Key;
@@ -23,8 +26,11 @@ const Header: Props[] = [
 
 const HeroSection = () => {
   return (
-    <div id="home" className="w-full h-screen bg-mainCol">
-      <div className="flex items-center w-11/12 md:w-4/5 h-full mx-auto">
+    <section
+      id="home"
+      className="relative w-full h-[150vh] md:h-screen bg-mainCol"
+    >
+      <div className="absolute inset-0 items-center w-11/12 md:w-4/5 pt-[10rem] h-full mx-auto">
         {Header.map((item) => (
           <div
             key={item.id}
@@ -48,14 +54,33 @@ const HeroSection = () => {
               />
             </h1>
             <SlideToTop>
-              <p className="text-center md:text-left text-lg w-full md:w-3/5 text-secondaryCol font-medium pt-10">
-                {item.paragraph}
-              </p>
+              <div className="flex flex-col items-start justify-start gap-y-20">
+                <p className="text-center md:text-left text-2xl w-full md:w-3/5 text-secondaryCol font-medium pt-10">
+                  {item.paragraph}
+                </p>
+                <div className="flex flex-col items-center w-full md:flex-row gap-y-6 gap-x-10">
+                  <Link
+                    href="#contact-me"
+                    className="rounded bg-lighterCol py-4 px-10 text-xl text-mainCol hover:text-mainCol hover:px-10 transition-all ease-in focus:outline-none"
+                  >
+                    Hire me
+                  </Link>
+                  <Link
+                    href="#projects"
+                    className="rounded border border-lighterCol bg-transparent py-4 px-10 text-xl text-lighterCol hover:px-10 transition-all ease-in focus:outline-none"
+                  >
+                    My Projects
+                  </Link>
+                </div>
+              </div>
             </SlideToTop>
           </div>
         ))}
       </div>
-    </div>
+      <div className="hidden md:flex items-end justify-end h-screen w-full">
+        <Image src={Bujakasha} className="h-full w-[550px] opacity-15" alt="" />
+      </div>
+    </section>
   );
 };
 

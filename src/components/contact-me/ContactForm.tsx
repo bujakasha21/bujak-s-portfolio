@@ -53,7 +53,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="h-fit flex flex-col gap-y-6">
+    <div className="h-full flex flex-col gap-y-10">
       <div className="w-full">
         <p className="text-secondaryCol opacity-75 text-md md:text-lg font-medium">
           Get in Touch. Ready to kickstart my career in Frontend Development.
@@ -114,12 +114,17 @@ const ContactForm = () => {
         <div className="w-full p-2">
           <button
             type="submit"
-            className="mx-auto flex rounded border-0 bg-darkerCol py-2 px-8 text-lg text-lighterCol hover:text-mainCol hover:px-10 transition-all ease-in focus:outline-none"
+            className="flex rounded border-0 bg-lighterCol py-2 px-8 text-lg text-mainCol hover:text-mainCol hover:px-10 transition-all ease-in focus:outline-none"
           >
             Contact Me
           </button>
+          {formError !== "" && (
+            <p className="text-md text-left font-light pt-4 text-red-700 opacity-75">
+              {formError}
+            </p>
+          )}
           {formSuccess && (
-            <p className="text-md text-center font-light pt-4 text-lighterCol opacity-75">
+            <p className="text-md text-left font-light pt-4 text-lighterCol opacity-75">
               Email has been sent successfully
             </p>
           )}

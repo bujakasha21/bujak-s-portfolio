@@ -61,7 +61,7 @@ const Icons = () => {
   return (
     <div className="w-full h-fit bg-lighterCol">
       <div className="flex items-center">
-        <Marquee speed={50} direction="right">
+        <Marquee speed={50} direction="right" autoFill>
           {IconVector.map((icon) => (
             <div key={icon.id} className="w-full p-6 md:p-10">
               <Image className="w-10 md:w-16" src={icon.icons} alt="icons" />
