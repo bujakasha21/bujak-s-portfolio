@@ -53,31 +53,37 @@
 }
 
 /* Hamburger*/
-.hamburger {
-  cursor: pointer;
-  position: relative;
-  width: 24px;
-  height: 24px;
-  transition: all 0.3s;
+.burger {
+  width: 100%;
+  &::after,
+  &::before {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 40%;
+    margin: auto;
+    background-color: #986845;
+    position: relative;
+    transition: transform 0.3s;
+  }
+
+  &::after {
+    top: -5px;
+  }
+
+  &::before {
+    top: 5px;
+  }
 }
 
-.hamburger-top,
-.hamburger-mid,
-.hamburger-bot {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 24px;
-  height: 2px;
-  background: #986845;
-  transform: rotate(0);
-  transition: all 0.5s;
-}
+.burgerActive {
+  &::after {
+    transform: rotate(45deg);
+    top: -2px;
+  }
 
-.hamburger-mid {
-  transform: translateY(8px);
-}
-
-.hamburger-bot {
-  transform: translateY(16px);
+  &::before {
+    transform: rotate(-45deg);
+    top: 0px;
+  }
 }

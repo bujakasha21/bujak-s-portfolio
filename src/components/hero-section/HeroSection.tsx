@@ -28,7 +28,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative w-full h-[135vh] md:h-screen bg-mainCol"
+      className="relative w-full h-[140vh] md:h-screen bg-mainCol"
     >
       <div className="absolute inset-0 items-center w-11/12 md:w-4/5 pt-[10rem] h-full mx-auto">
         {Header.map((item) => (
