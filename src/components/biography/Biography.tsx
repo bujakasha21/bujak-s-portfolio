@@ -23,7 +23,7 @@ const Biography = () => {
   return (
     <div
       id="about-me"
-      className="w-full h-[170vh] md:h-[100vh] bg-secondaryCol"
+      className="w-full h-[170vh] md:h-[120vh] bg-secondaryCol"
     >
       <div className="h-full w-11/12 md:w-4/5 flex flex-col gap-y-16 items-center mx-auto">
         <div className="flex items-center justify-center md:justify-end w-full pt-[10rem]">
