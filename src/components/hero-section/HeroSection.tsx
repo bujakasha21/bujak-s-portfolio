@@ -28,9 +28,9 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative w-full h-[140vh] md:h-screen bg-mainCol"
+      className="relative w-full h-[140vh] lg:h-screen bg-mainCol"
     >
-      <div className="absolute inset-0 items-center w-11/12 md:w-4/5 pt-[10rem] h-full mx-auto">
+      <div className="absolute inset-0 items-center w-11/12 md:w-4/5 pt-[10rem] h-fit mx-auto">
         {Header.map((item) => (
           <div
             key={item.id}
@@ -55,7 +55,7 @@ const HeroSection = () => {
             </h1>
             <SlideToTop>
               <div className="flex flex-col items-start justify-start gap-y-20">
-                <p className="text-center md:text-left text-md md:text-2xl w-full md:w-3/5 text-secondaryCol font-medium pt-10">
+                <p className="text-center md:text-left text-md md:text-xl lg:text-2xl w-full md:w-3/5 text-secondaryCol font-medium pt-10">
                   {item.paragraph}
                 </p>
                 <div className="flex flex-col items-center w-full md:flex-row gap-y-6 gap-x-10">
@@ -63,13 +63,13 @@ const HeroSection = () => {
                     href="#contact-me"
                     className="rounded bg-lighterCol py-2 md:py-4 px-8 md:px-10 text-xl text-mainCol hover:text-mainCol hover:px-10 transition-all ease-in focus:outline-none"
                   >
-                    Hire me
+                    My Projects
                   </Link>
                   <Link
                     href="#projects"
                     className="rounded border border-lighterCol bg-transparent py-2 md:py-4 px-8 md:px-10 text-xl text-lighterCol hover:px-10 transition-all ease-in focus:outline-none"
                   >
-                    My Projects
+                    Hire me
                   </Link>
                 </div>
               </div>
