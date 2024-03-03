@@ -1,3 +1,4 @@
+import BackToTopButton from "@/components/back-to-top-btn/BackToTop";
 import Footer from "@/components/footer/Footer";
 import NavBar from "@/components/navbar/NavBar";
 import "@/styles/globals.css";
@@ -8,6 +9,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <NavBar />
       <Component {...pageProps} />
+      <BackToTopButton />
       <Footer />
     </>
   );
