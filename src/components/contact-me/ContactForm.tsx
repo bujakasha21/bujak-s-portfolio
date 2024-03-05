@@ -114,7 +114,7 @@ const ContactForm = () => {
         <div className="w-full p-2">
           <button
             type="submit"
-            className="flex rounded border-0 bg-lighterCol py-2 px-8 text-lg text-mainCol hover:text-mainCol hover:px-10 transition-all ease-in focus:outline-none"
+            className="flex rounded border-0 bg-lighterCol py-2 md:py-4 px-8 md:px-10 text-lg text-mainCol font-medium hover:text-mainCol hover:px-12 transition-all ease-in focus:outline-none"
           >
             Contact Me
           </button>

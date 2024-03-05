@@ -67,7 +67,7 @@ const MobileNavBar = () => {
   return (
     <>
       <div onClick={toggleMenu} className="flex md:hidden cursor-pointer">
-        <div className="text-lg font-medium text-darkerCol">Menu</div>
+        <div className="text-lg font-medium text-darkerCol">menu</div>
       </div>
       <AnimatePresence>
         {isActive && (
@@ -76,16 +76,16 @@ const MobileNavBar = () => {
             initial="initial"
             animate="animate"
             exit="exit"
-            className="fixed left-0 top-0 w-full py-8 h-screen origin-top bg-lighterCol opacity-95 text-mainCol"
+            className="fixed left-0 top-0 w-full py-6 h-screen origin-top bg-lighterCol opacity-95 text-mainCol"
           >
             <div className="flex w-11/12 mx-auto h-full flex-col">
               <div className="flex justify-between">
-                <h2 className="text-2xl font-bold text-darkerCol">{`<bujak.davor />`}</h2>
+                <h2 className="text-xl font-bold text-darkerCol">{`<bujak.davor />`}</h2>
                 <p
                   onClick={toggleMenu}
-                  className="text-lg font-medium text-mainCol"
+                  className="text-lg font-medium text-darkerCol"
                 >
-                  Close
+                  close
                 </p>
               </div>
               <motion.div
@@ -98,7 +98,7 @@ const MobileNavBar = () => {
                 {navLinks.map((link) => (
                   <div key={link.id} className="overflow-hidden">
                     <motion.div variants={mobileLinkVariants}>
-                      <Link href={link.path}>
+                      <Link href={link.path} onClick={toggleMenu}>
                         <h2 className="text-3xl font-bold text-mainCol uppercase">
                           {link.link}
                         </h2>

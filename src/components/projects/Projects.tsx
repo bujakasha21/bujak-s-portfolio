@@ -127,10 +127,10 @@ const Projects = () => {
   }, []);
   //
   return (
-    <div id="projects" className="">
+    <div id="projects" className="overflow-hidden">
       <div ref={triggering} className="perspective bg-secondaryCol">
         <div className="absolute w-full">
-          <h1 className="font-bold text-center text-xl md:text-4xl text-darkerCol pt-[6.5rem] pb-[8rem]">
+          <h1 className="font-bold text-center sm:text-right md:text-center sm:pr-10 md:pr-0 text-xl md:text-4xl text-darkerCol pt-[7rem] md:pt-[10rem]">
             {`<My Projects />`}
           </h1>
         </div>

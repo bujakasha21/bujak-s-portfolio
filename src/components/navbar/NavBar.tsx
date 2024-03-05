@@ -34,9 +34,9 @@ export const navLinks: Links[] = [
 const NavBar = () => {
   return (
     <nav className="fixed w-full h-fit bg-secondaryCol z-10 shadow-md">
-      <div className="w-11/12 md:w-4/5 flex items-center justify-between mx-auto py-8">
+      <div className="w-11/12 md:w-4/5 flex items-center justify-between mx-auto py-6 md:py-8">
         <Link href="#">
-          <h2 className="text-2xl font-bold text-darkerCol">{`<bujak.davor />`}</h2>
+          <h2 className="text-xl font-bold text-darkerCol">{`<bujak.davor />`}</h2>
         </Link>
 
         {/*Mobile*/}
@@ -46,7 +46,7 @@ const NavBar = () => {
           {navLinks.map((link) => (
             <div key={link.id}>
               <Link href={link.path}>
-                <h2 className="text-xl font-medium text-mainCol hover:text-darkerCol transition-all ease-in">
+                <h2 className="text-lg font-medium text-mainCol hover:text-darkerCol transition-all ease-in">
                   {link.link}
                 </h2>
               </Link>
