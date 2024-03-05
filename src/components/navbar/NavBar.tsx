@@ -42,7 +42,7 @@ const NavBar = () => {
         {/*Mobile*/}
         <MobileNavBar />
         {/*Desktop*/}
-        <div className="hidden md:flex items-center gap-x-20">
+        <div className="hidden lg:flex items-center gap-x-20">
           {navLinks.map((link) => (
             <div key={link.id}>
               <Link href={link.path}>

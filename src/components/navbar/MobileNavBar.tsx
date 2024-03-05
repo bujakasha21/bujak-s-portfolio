@@ -66,7 +66,7 @@ const MobileNavBar = () => {
 
   return (
     <>
-      <div onClick={toggleMenu} className="flex md:hidden cursor-pointer">
+      <div onClick={toggleMenu} className="flex lg:hidden cursor-pointer">
         <div className="text-lg font-medium text-darkerCol">menu</div>
       </div>
       <AnimatePresence>
