@@ -13,9 +13,9 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative w-full h-screen sm:h-[100vw] md:h-screen bg-mainCol overflow-hidden"
+      className="relative w-full min-h-screen bg-mainCol overflow-hidden"
     >
-      <div className="absolute inset-0 w-11/12 md:w-4/5 mt-[8rem] mb-8 lg:mt-[12rem] h-full mx-auto">
+      <div className="absolute inset-0 w-11/12 md:w-4/5 mt-[8rem] mb-8 lg:mt-[12rem] mx-auto">
         <div className="flex flex-col justify-center items-center md:items-start gap-y-8 sm:gap-y-2 md:gap-y-10 w-full">
           <SlideToRight>
             <h4 className="text-xl font-bold md:text-4xl text-darkerCol">
