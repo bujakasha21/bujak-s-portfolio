@@ -38,7 +38,7 @@ const Biography = () => {
             />
           </div>
           <div className="flex flex-col justify-end w-full lg:w-1/2 xl:w-2/5">
-            <p className="text-mainCol text-sm xl:text-2xl text-center sm:text-right font-medium pb-10 md:pb-16">
+            <p className="text-mainCol text-sm lg:text-2xl text-center sm:text-right font-medium pb-10 md:pb-16">
               Hey there, I&apos;m Davor Bujak, a Front-End Developer from
               Sarajevo, Bosnia and Herzegovina, where Development and Design
               fuel my passion. But my journey doesn&apos;t end there. Beyond the
