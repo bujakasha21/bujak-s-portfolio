@@ -2,7 +2,6 @@ import Image, { StaticImageData } from "next/image";
 import React, { Key } from "react";
 
 import BujakDavor from "@/assets/images/DAVOR-AA1.png";
-import SlideToRight from "../effects/SlideToRight";
 import Links from "../icons-links/Links";
 
 type Items = {
