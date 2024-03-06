@@ -13,7 +13,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative w-full min-h-screen sm:h-[70vw] lg:h-screen pb-[10rem] bg-mainCol overflow-hidden"
+      className="relative w-full min-h-screen sm:h-[70vw] lg:min-h-screen xl:h-screen bg-mainCol overflow-hidden"
     >
       <div className="absolute inset-0 w-11/12 md:w-4/5 mt-[8rem] mb-8 lg:mt-[12rem] mx-auto">
         <div className="flex flex-col justify-center items-center md:items-start gap-y-8 sm:gap-y-2 md:gap-y-10 w-full">
@@ -58,7 +58,7 @@ const HeroSection = () => {
           </SlideToTop>
         </div>
       </div>
-      <div className="hidden lg:flex flex-col items-end justify-end h-screen w-full">
+      <div className="hidden lg:flex items-end justify-end w-full h-full">
         <Image
           src={Bujakasha}
           className="h-auto lg:w-[350px] xl:w-[550px] opacity-15"
