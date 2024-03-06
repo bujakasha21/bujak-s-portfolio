@@ -22,7 +22,7 @@ const HeroSection = () => {
               {`<Hello World />`}
             </h4>
           </SlideToRight>
-          <h1 className="text-4xl md:text-6xl text-center md:text-left font-bold lg:text-8xl text-secondaryCol h-0 md:h-[5rem]">
+          <h1 className="text-4xl md:text-7xl text-center md:text-left font-bold xl:text-8xl text-secondaryCol h-0 md:h-[5rem]">
             I&apos;m <span className="text-lighterCol">Bujak Davor</span>
             .
             <br />
@@ -35,7 +35,7 @@ const HeroSection = () => {
             />
           </h1>
           <SlideToTop>
-            <div className="flex flex-col items-start justify-start pt-20 lg:pt-[8rem] gap-y-14">
+            <div className="flex flex-col items-start justify-start pt-20 lg:pt-[6rem] gap-y-14">
               <p className="text-center md:text-left text-md md:text-xl lg:text-2xl w-full md:w-3/5 text-secondaryCol font-normal pt-10 sm:pt-5 md:pt-0">
                 Hello there, I&apos;m a passionate React Frontend Developer and
                 Graphic Designer based in Sarajevo, BiH.{" "}
@@ -59,7 +59,11 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="hidden lg:flex items-end justify-end h-screen w-full">
-        <Image src={Bujakasha} className="h-full w-[550px] opacity-15" alt="" />
+        <Image
+          src={Bujakasha}
+          className="h-auto w-[400px] xl:w-[550px] opacity-15"
+          alt=""
+        />
       </div>
     </section>
   );

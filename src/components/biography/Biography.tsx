@@ -33,12 +33,12 @@ const Biography = () => {
           <div className="flex items-center justify-center h-full w-full md:w-1/2">
             <Image
               src={BujakDavor}
-              className="w-full h-full sm:h-[20rem] sm:w-[20rem] lg:h-[40rem] lg:w-[40rem]"
+              className="w-full h-auto"
               alt="bujakdavor"
             />
           </div>
           <div className="flex flex-col justify-end w-full lg:w-1/2 xl:w-2/5">
-            <p className="text-mainCol text-sm lg:text-2xl text-center sm:text-right font-medium pb-10 md:pb-16">
+            <p className="text-mainCol text-sm xl:text-2xl text-center sm:text-right font-medium pb-10 md:pb-16">
               Hey there, I&apos;m Davor Bujak, a Front-End Developer from
               Sarajevo, Bosnia and Herzegovina, where Development and Design
               fuel my passion. But my journey doesn&apos;t end there. Beyond the
