@@ -58,10 +58,10 @@ const HeroSection = () => {
           </SlideToTop>
         </div>
       </div>
-      <div className="hidden lg:flex items-end justify-end h-screen w-full">
+      <div className="hidden lg:flex flex-col items-end justify-end h-screen w-full">
         <Image
           src={Bujakasha}
-          className="h-auto w-[400px] xl:w-[550px] opacity-15"
+          className="h-auto lg:w-[350px] xl:w-[550px] opacity-15"
           alt=""
         />
       </div>
