@@ -6,7 +6,7 @@ const ContactMe = () => {
   return (
     <div
       id="contact-me"
-      className="md:h-screen h-[160vh] sm:h-[275vh] w-full bg-mainCol overflow-hidden"
+      className="min-h-screen pb-14 w-full bg-mainCol overflow-hidden"
     >
       <div className="flex flex-col w-11/12 md:w-4/5 mx-auto h-full gap-y-16">
         <div className="flex items-center justify-center w-full pt-[7rem] md:pt-[10rem]">

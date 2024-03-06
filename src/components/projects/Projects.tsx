@@ -130,7 +130,7 @@ const Projects = () => {
     <div id="projects" className="overflow-hidden">
       <div ref={triggering} className="perspective bg-secondaryCol">
         <div className="absolute w-full">
-          <h1 className="font-bold text-center sm:text-right md:text-center sm:pr-10 md:pr-0 text-xl md:text-4xl text-darkerCol pt-[7rem] md:pt-[10rem]">
+          <h1 className="font-bold text-center md:text-right lg:text-center md:pr-10 lg:pr-0 text-xl lg:text-4xl text-darkerCol pt-[7rem] lg:pt-[10rem]">
             {`<My Projects />`}
           </h1>
         </div>
@@ -143,7 +143,7 @@ const Projects = () => {
               <div
                 ref={ref}
                 key={project.id}
-                className={`${project.class} rounded-md bg-darkerCol shadow-md`}
+                className={`${project.class} rounded-md bg-darkerCol shadow-md md:mt-10 lg:mt-0`}
               >
                 <Link href={project.websiteURL}>
                   <Image

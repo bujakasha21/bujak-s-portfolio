@@ -24,7 +24,7 @@ export default function Home() {
           property="og:description"
           content="Explore my projects and skills. Welcome to my portfolio website, where I showcase my projects and skills in the world of software development."
         />
-        <meta property="og:image" content="/src/assets/images/portfolio.png" />
+        <meta property="og:image" content="/public/portfolio.png" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
