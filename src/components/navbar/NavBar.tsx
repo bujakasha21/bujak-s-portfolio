@@ -33,7 +33,7 @@ export const navLinks: Links[] = [
 
 const NavBar = () => {
   return (
-    <nav className="fixed w-full h-fit bg-secondaryCol z-10 shadow-md">
+    <nav className="fixed w-full h-fit bg-secondaryCol z-10 shadow-md opacity-95">
       <div className="w-11/12 md:w-4/5 flex items-center justify-between mx-auto py-6 md:py-8">
         <Link href="#">
           <h2 className="text-xl font-bold text-darkerCol">{`<bujak.davor />`}</h2>
